@@ -1,11 +1,11 @@
-import { Button, Grid } from '@mui/material';
 import React from 'react';
+import { Button, Grid } from '@mui/material';
 
-const Product = ({ product }) => {
-    const { name, price, description, img } = product
+const MoreProduct = (props) => {
+    const { name, price, description, img } = props?.moreProduct;
+    console.log('ki',props);
     return (
         <div>
-
             <Grid sx={{ backgroundColor: '#E2E5AF', p: 3, border: 4, borderRadius: 4, borderColor: '#787F14 ' }}>
                 <img style={{
                     borderRadius: '5px',
@@ -16,16 +16,16 @@ const Product = ({ product }) => {
                 <h5>Price: {price}</h5>
                 <p className="px-3">{description}</p>
                 <Button
-                        sx={{ width: '50%', mt: 4 }}
-                        style={{ background: 'linear-gradient(to right bottom, #525B08, #BBC472 )' }}
-                        type="submit"
-                        variant="contained"
-                        >
-                        Buy Now
-                    </Button>
+                    sx={{ width: '50%', mt: 4 }}
+                    style={{ background: 'linear-gradient(to right bottom, #525B08, #BBC472 )' }}
+                    type="submit"
+                    variant="contained"
+                >
+                    Buy Now
+                </Button>
             </Grid>
         </div>
     );
 };
 
-export default Product;
+export default MoreProduct;

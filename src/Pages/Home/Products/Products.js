@@ -20,11 +20,14 @@ const Products = () => {
             <div className='products'>
 
                 {
-                    products.map(product => <Product
+                    products.slice(0,6).map(product => <Product
                         key={product.name}
                         product={product}
-                    ></Product>)
+                    ></Product>
+                    )
                 }
+                
+
             </div>
         </div>
     );

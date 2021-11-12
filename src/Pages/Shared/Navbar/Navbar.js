@@ -9,9 +9,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
 import { makeStyles } from '@mui/styles';
 import { Drawer, List, ListItem, ListItemText, useTheme } from '@mui/material';
+import useAuth from '../../../hooks/useAuth';
 
 const Navbar = () => {
     const theme = useTheme()
+    // style
     const useStyle = makeStyles({
         navItem: {
             color: '#fff',
@@ -40,6 +42,8 @@ const Navbar = () => {
     const { navItem, navIcon, navItemContainer, title, mobileNavItem } = useStyle()
     const [state, setState] = React.useState(false);
 
+    const { user, logOut } = useAuth();
+
     return (
         <>
             <Box sx={{ flexGrow: 1 }}>
@@ -60,9 +64,15 @@ const Navbar = () => {
                             News
                         </Typography>
                         <Box className={navItemContainer}>
-                            <Link className={navItem} to='/'><Button color="inherit">Login</Button></Link>
-                            <Link className={navItem} to='/'><Button color="inherit">Login</Button></Link>
-                            <Link className={navItem} to='/'><Button color="inherit">Login</Button> </Link>
+                            <Link className={navItem} to='/'><Button color="inherit">HOME</Button></Link>
+                            <Link className={navItem} to='/moreProduct'><Button color="inherit">MORE TOYS</Button></Link>
+                            <Link className={navItem} to='/purchase'><Button color="inherit">PURCHASE</Button></Link>
+                            {
+                                user?.email ?
+                                    <Button onClick={logOut} color="inherit">Logout</Button>
+                                    :
+                                    <Link className={navItem} to='/login'><Button color="inherit">LOGIN</Button> </Link>
+                            }
                         </Box>
 
                     </Toolbar>
@@ -81,14 +91,17 @@ const Navbar = () => {
                             <List>
                                 <ListItem button >
                                     <ListItemText>
-                                        <Link className={mobileNavItem} to='/'>Home</Link>
+                                        <Link className={mobileNavItem} to='/'>HOME</Link>
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem button >
-                                    <ListItemText><Link className={mobileNavItem} to='/'>Home</Link></ListItemText>
+                                    <ListItemText><Link className={mobileNavItem} to='/moreProduct'>MORE TOYS</Link></ListItemText>
                                 </ListItem>
                                 <ListItem button >
-                                    <ListItemText><Link className={mobileNavItem} to='/'>Home</Link></ListItemText>
+                                    <ListItemText><Link className={mobileNavItem} to='/purchase'>PURCHASE</Link></ListItemText>
+                                </ListItem>
+                                <ListItem button >
+                                    <ListItemText><Link className={mobileNavItem} to='/login'>LOGIN</Link></ListItemText>
                                 </ListItem>
                             </List>
                         </Box>

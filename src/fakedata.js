@@ -1,32 +1,62 @@
 const toys = [
     {
-        name: 'Touch and Teach Elephant',
+        name: 'Hanging Toy',
         description: '',
-        img: 'https://i.pinimg.com/originals/dd/fe/8b/ddfe8b90d7e27b04c19b02e95f21e321.jpg'
+        price: '550',
+        img: 'https://m.media-amazon.com/images/I/71tn+S6SDgL._AC_SS450_.jpg'
     },
     {
-        name: 'Alphabet Toy',
+        name: 'Colourful Toy',
+        price: '430',
         description: '',
-        img: 'http://sc04.alicdn.com/kf/HTB1n0LBaEzrK1RjSspmq6AOdFXaE.jpg'
+        img: 'https://m.media-amazon.com/images/I/515jE-TATKL._SY355_.jpg'
     },
     {
-        name: 'Duck Toy',
+        name: 'Jhuna Toy',
         description: '',
-        img: 'https://i.ebayimg.com/images/g/IfoAAOSwZGlhJSX8/s-l640.jpg'
+        price: '400',
+        img: 'https://static-01.daraz.com.bd/p/a318cfac3bfbcac136a6d5db472ff5b5.jpg'
     },
     {
-        name: 'Autistic Children Toy',
+        name: 'Baby Toy',
         description: '',
-        img: 'https://i.pinimg.com/564x/f9/08/cd/f908cd25a268eec4bb0e072e6aa4d70c--autistic-children-toys-for-children.jpg'
+        price: '400',
+        img: 'https://image.shutterstock.com/image-photo/baby-toys-collection-isolated-on-260nw-179833748.jpg'
     },
     {
-        name: 'Gun Toy',
+        name: 'Ball Pool Toy',
         description: '',
-        img: 'https://i.ytimg.com/vi/gtOFDGUhdYs/maxresdefault.jpg'
+        price: '400',
+        img: 'https://m.media-amazon.com/images/I/71dmVGAGh1L._AC_SS450_.jpg'
     },
     {
-        name: 'Vanity of Toy',
+        name: 'Jewellery Set',
         description: '',
-        img: 'https://m.media-amazon.com/images/I/815sf3wcfjL.jpg'
+        price: '400',
+        img: 'https://3.imimg.com/data3/WT/AB/MY-12829656/kid-toy-500x500.jpg'
+    },
+    {
+        name: 'Dinosaur Adventure Toy',
+        description: '',
+        price: '400',
+        img: 'https://img.buzzfeed.com/store-an-image-prod-us-east-1/uCFYsIsCs.png?output-format=jpg'
+    },
+    {
+        name: 'Musical Toy',
+        description: '',
+        price: '400',
+        img: 'https://cdn2.momjunction.com/wp-content/uploads/2019/10/VTech-Musical-Rhymes-Book.jpg'
+    },
+    {
+        name: 'Kids Car Toy',
+        description: '',
+        price: '400',
+        img: 'https://image.made-in-china.com/2f0j00CaSfHNYGOsru/Kids-Mega-Car-Baby-Ride-on-Toy-Car-Kids-Vehicle-Toys.jpg'
+    },
+    {
+        name: 'Pyramid Baby Toy',
+        description: '',
+        price: '400',
+        img: 'https://image.shutterstock.com/image-photo/childrens-toys-collection-on-light-260nw-1899088951.jpg'
     },
 ]
