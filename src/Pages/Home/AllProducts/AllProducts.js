@@ -7,7 +7,7 @@ import './AllProducts.css';
 const AllProducts = () => {
     const [allProducts, setAllProducts] = useState([]);
     useEffect(()=>{
-        fetch('./toys.json')
+        fetch('http://localhost:5000/allProducts')
         .then(res => res.json())
         .then(data => setAllProducts(data))
     },[])
