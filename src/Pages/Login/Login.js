@@ -25,7 +25,7 @@ const Login = () => {
         <Container>
            
                 <Grid item sx={{ mt: 8 }} xs={12} md={12}>
-                    <Typography variant="body1" gutterBottom>Login</Typography>
+                <Typography  sx={{fontWeight: 600, color: '#0A5FA6', mt: 9}} variant="h4" gutterBottom>Login</Typography>
                     <form onSubmit={handleLoginSubmit}>
                         <TextField
                             sx={{ width: '75%', m: 1 }}
@@ -43,10 +43,12 @@ const Login = () => {
                             onChange={handleOnChange}
                             variant="standard" />
 
-                        <Button sx={{ width: '30%', m: 1 }} type="submit" variant="contained">Login</Button>
+                        <Button  sx={{ width: '30%', m: 1 }}
+                         style={{ background: 'linear-gradient(to right bottom, #55D8EC , #0A3A95  )' }} 
+                        type="submit" variant="contained">Login</Button>
                         <br />
                         <NavLink
-                            style={{ textDecoration: 'none' }}
+                            style={{ textDecoration: 'none',color:'#C2810D' }}
                             to="/register">
                             <Button variant="text">New User? Please Register</Button>
                         </NavLink>

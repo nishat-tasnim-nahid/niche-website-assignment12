@@ -65,8 +65,8 @@ const Navbar = () => {
                         </Typography>
                         <Box className={navItemContainer}>
                             <Link className={navItem} to='/'><Button color="inherit">HOME</Button></Link>
-                            <Link className={navItem} to='/moreProduct'><Button color="inherit">MORE TOYS</Button></Link>
                             <Link className={navItem} to='/purchase'><Button color="inherit">PURCHASE</Button></Link>
+                            <Link className={navItem} to='/allProducts'><Button color="inherit">allProducts</Button></Link>
                             {
                                 user?.email ?
                                     <Button onClick={logOut} color="inherit">Logout</Button>
@@ -95,10 +95,10 @@ const Navbar = () => {
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem button >
-                                    <ListItemText><Link className={mobileNavItem} to='/moreProduct'>MORE TOYS</Link></ListItemText>
+                                    <ListItemText><Link className={mobileNavItem} to='/purchase'>PURCHASE</Link></ListItemText>
                                 </ListItem>
                                 <ListItem button >
-                                    <ListItemText><Link className={mobileNavItem} to='/purchase'>PURCHASE</Link></ListItemText>
+                                    <ListItemText><Link className={mobileNavItem} to='/allProducts'>allProducts</Link></ListItemText>
                                 </ListItem>
                                 <ListItem button >
                                     <ListItemText><Link className={mobileNavItem} to='/login'>LOGIN</Link></ListItemText>

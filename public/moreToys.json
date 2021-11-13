@@ -1,41 +1,5 @@
 [
     {
-        "name": "Touch and Teach Elephant",
-        "description": "Your children can learn with fun. And enjoy theirself.",
-        "price": "780",
-        "img": "https://i.pinimg.com/originals/dd/fe/8b/ddfe8b90d7e27b04c19b02e95f21e321.jpg"
-    },
-    {
-        "name": "Alphabet Toy",
-        "description": "Learn easily alphabet with this beautiful toy",
-        "price": "500",
-        "img": "http://sc04.alicdn.com/kf/HTB1n0LBaEzrK1RjSspmq6AOdFXaE.jpg"
-    },
-    {
-        "name": "Duck Toy",
-        "description": "Its like every children. They play with duck and enjoy so much",
-        "price": "590",
-        "img": "https://i.ebayimg.com/images/g/IfoAAOSwZGlhJSX8/s-l640.jpg"
-    },
-    {
-        "name": "Autistic Children Toy",
-        "description": "Its helpful for autistic child, and they like it very much.",
-        "price": "940",
-        "img": "https://i.pinimg.com/564x/f9/08/cd/f908cd25a268eec4bb0e072e6aa4d70c--autistic-children-toys-for-children.jpg"
-    },
-    {
-        "name": "Gun Toy",
-        "description": "Gun toy is mostly favourite toy for children. They like it very much",
-        "price": "450",
-        "img": "https://i.ytimg.com/vi/gtOFDGUhdYs/maxresdefault.jpg"
-    },
-    {
-        "name": "Vanity of Toy",
-        "description": "Girls children likes it more, they find their own with this.",
-        "price": "660",
-        "img": "https://m.media-amazon.com/images/I/815sf3wcfjL.jpg"
-    },
-    {
         "name": "Hanging Toy",
         "description": "It enjoy little baby lot.They have to like it more",
         "price": "950",
@@ -94,5 +58,5 @@
         "description": "Its help babys brain shine and they thik to match.",
         "price": "1110",
         "img": "https://image.shutterstock.com/image-photo/childrens-toys-collection-on-light-260nw-1899088951.jpg"
-    }    
+    }
 ]

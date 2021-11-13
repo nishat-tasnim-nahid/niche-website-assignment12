@@ -27,7 +27,7 @@ const Register = () => {
     return (
         <Container>
             <Grid item sx={{ mt: 8 }} xs={12} md={12}>
-                    <Typography variant="body1" gutterBottom>Register</Typography>
+                    <Typography  sx={{fontWeight: 600, color: '#0A5FA6', mt: 9}} variant="h4" gutterBottom>Register</Typography>
                     {!isLoading && <form onSubmit={handleLoginSubmit}>
                         <TextField
                             sx={{ width: '75%', m: 1 }}
@@ -61,7 +61,8 @@ const Register = () => {
                             onBlur={handleOnBlur}
                             variant="standard" />
 
-                        <Button sx={{ width: '75%', m: 1 }} type="submit" variant="contained">Register</Button>
+                        <Button sx={{ width: '25%', m: 1 }}
+                        style={{ background: 'linear-gradient(to right bottom, #55D8EC , #0A3A95  )' }}  type="submit" variant="contained">Register</Button> <br />
                         <NavLink
                             style={{ textDecoration: 'none' }}
                             to="/login">

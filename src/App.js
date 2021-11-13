@@ -10,6 +10,7 @@ import AuthProvider from './contexts/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Purchase from './Pages/Purchase/Purchase';
 import Register from './Pages/Login/Register/Register';
+import AllProducts from './Pages/Home/AllProducts/AllProducts';
 
 function App() {
   return (
@@ -21,11 +22,11 @@ function App() {
           <Route exact path="/">
             <Home></Home>
           </Route>
-          <Route  path="/moreProduct">
-            <MoreProduct></MoreProduct>
-          </Route>
           <PrivateRoute path='/purchase'>
             <Purchase></Purchase>
+          </PrivateRoute>
+          <PrivateRoute path='/allProducts'>
+            <AllProducts></AllProducts>
           </PrivateRoute>
           <Route  path="/login">
             <Login></Login>
