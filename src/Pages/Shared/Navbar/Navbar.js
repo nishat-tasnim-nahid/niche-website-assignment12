@@ -16,7 +16,7 @@ const Navbar = () => {
     // style
     const useStyle = makeStyles({
         navItem: {
-            color: '#fff',
+            color: '#fff ',
             textDecoration: 'none'
         },
         navIcon: {
@@ -61,20 +61,20 @@ const Navbar = () => {
                             <MenuIcon />
                         </IconButton>
                         <Typography className={title} variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                            News
+                            BABY TOY
                         </Typography>
                         <Box className={navItemContainer}>
                             <Link className={navItem} to='/'><Button color="inherit">HOME</Button></Link>
-                            <Link className={navItem} to='/purchase'><Button color="inherit">PURCHASE</Button></Link>
-                            <Link className={navItem} to='/allProducts'><Button color="inherit">allProducts</Button></Link>
+                            <Link className={navItem} to='/allProducts'><Button color="inherit">ALLPRODUCTS</Button></Link>
                             {
                                 user?.email ?
-                                    <Button onClick={logOut} color="inherit">Logout</Button>
-                                    :
+                                    <Box>
+                                        <Link className={navItem} to='/dashboard'><Button color="inherit">DASHBOARD</Button> </Link>
+                                        <Button onClick={logOut} color="inherit">Logout</Button>
+                                    </Box> :
                                     <Link className={navItem} to='/login'><Button color="inherit">LOGIN</Button> </Link>
                             }
                         </Box>
-
                     </Toolbar>
                 </AppBar>
             </Box>
@@ -82,12 +82,10 @@ const Navbar = () => {
                 <React.Fragment>
                     <Drawer
                         open={state}
-                        onClose={() => setState(false)}
-                    >
+                        onClose={() => setState(false)}>
                         <Box
                             sx={{ width: 250 }}
-                            role="presentation"
-                        >
+                            role="presentation">
                             <List>
                                 <ListItem button >
                                     <ListItemText>
@@ -95,13 +93,17 @@ const Navbar = () => {
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem button >
-                                    <ListItemText><Link className={mobileNavItem} to='/purchase'>PURCHASE</Link></ListItemText>
+                                    <ListItemText><Link className={mobileNavItem} to='/allProducts'>ALPRODUCT</Link></ListItemText>
                                 </ListItem>
                                 <ListItem button >
-                                    <ListItemText><Link className={mobileNavItem} to='/allProducts'>allProducts</Link></ListItemText>
-                                </ListItem>
-                                <ListItem button >
-                                    <ListItemText><Link className={mobileNavItem} to='/login'>LOGIN</Link></ListItemText>
+                                    {
+                                        user?.email ?
+                                            <Box>
+                                                <Link className={mobileNavItem} to='/dashboard'><Button color="inherit">DASHBOARD</Button> </Link> <br />
+                                                <Button onClick={logOut} color="inherit">Logout</Button>
+                                            </Box> :
+                                            <ListItemText><Link className={mobileNavItem} to='/login'>LOGIN</Link></ListItemText>
+                                    }
                                 </ListItem>
                             </List>
                         </Box>
