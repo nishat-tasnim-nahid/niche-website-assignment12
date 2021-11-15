@@ -8,7 +8,7 @@ import './AllProducts.css';
 const AllProducts = () => {
     const [allProducts, setAllProducts] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/allProducts')
+        fetch('https://pacific-fjord-63691.herokuapp.com/allProducts')
             .then(res => res.json())
             .then(data => setAllProducts(data))
     }, [])
